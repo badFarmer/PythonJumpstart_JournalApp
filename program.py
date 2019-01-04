@@ -22,6 +22,11 @@ def run_event_loop():
             print("L")
         elif cmd == 'A':
             print("A")
+        elif cmd  != 'x':
+            print("Sorry, we don't understand '{}'.".format(cmd))
+
+    print("Done, goodbye.")
+
 
 
 
