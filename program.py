@@ -33,14 +33,17 @@ def run_event_loop():
     print("Done, goodbye.")
     journal.save(journal_name, journal)
 
+
 def list_entries(data):
     print('Your journal entries:')
     entries = reversed(data)
     for idx, entry in enumerate(entries):
         print('* [{}] {}'.format(idx+1, entry))
 
+
 def add_entry(data):
     text = input('Type your entry, <enter> to exit: ')
     journal.add_entry(text, data)
+
 
 main()
