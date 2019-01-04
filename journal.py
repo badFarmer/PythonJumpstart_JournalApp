@@ -2,6 +2,13 @@ import os
 
 
 def load(name):
+    """
+    this mthood creates and loads a new journal.
+
+    :param name: the base name of the journal to load
+    :return: a new journal data structure populated with the file data
+    """
+
     data = []
     filename = get_full_pathname(name)
 
