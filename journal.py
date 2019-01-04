@@ -36,3 +36,4 @@ def get_full_pathname(name):
 
 def add_entry(text, journal_data):
     journal_data.append('{} | {}'.format(datetime.datetime.today(), text))
+    # test
