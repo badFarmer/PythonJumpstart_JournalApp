@@ -1,9 +1,9 @@
 import os
-
+import datetime
 
 def load(name):
     """
-    this mthood creates and loads a new journal.
+    this methood creates and loads a new journal.
 
     :param name: the base name of the journal to load
     :return: a new journal data structure populated with the file data
@@ -35,4 +35,4 @@ def get_full_pathname(name):
 
 
 def add_entry(text, journal_data):
-    journal_data.append(text)
+    journal_data.append('{} | {}'.format(datetime.datetime.today(), text))

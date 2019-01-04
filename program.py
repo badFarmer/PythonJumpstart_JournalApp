@@ -41,6 +41,7 @@ def list_entries(data):
 
 
 def add_entry(data):
+    print("Format: \r [date] | [text] (documentation)")
     text = input('Type your entry, <enter> to exit: ')
     journal.add_entry(text, data)
 
